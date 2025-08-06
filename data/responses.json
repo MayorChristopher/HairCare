@@ -1,0 +1,46 @@
+[
+  {
+    "keywords": ["dandruff", "dry scalp"],
+    "scalp": "dry",
+    "response": "Use a moisturizing anti-dandruff shampoo containing zinc pyrithione or tea tree oil. Avoid harsh cleansers and consider using a scalp oil treatment 2-3 times per week."
+  },
+  {
+    "keywords": ["hair loss", "shedding"],
+    "response": "Consider protein treatments and reduce tight hairstyles. Consult a dermatologist if shedding persists. Biotin supplements and scalp massage can also help stimulate growth."
+  },
+  {
+    "keywords": ["frizz", "curly"],
+    "hairType": "curly",
+    "response": "Frizz control starts with hydration. Use a leave-in conditioner, avoid heat, and dry hair with a microfiber towel. Try the 'plopping' method for better curl definition."
+  },
+  {
+    "keywords": ["oily scalp", "greasy hair"],
+    "scalp": "oily",
+    "response": "Wash hair more frequently with a clarifying shampoo. Avoid heavy oils and silicone-based products. Dry shampoo between washes can help absorb excess oil."
+  },
+  {
+    "keywords": ["split ends"],
+    "response": "Split ends cannot be repaired—trim them regularly every 6-8 weeks. Use heat protection and deep condition weekly. Avoid brushing wet hair aggressively."
+  },
+  {
+    "keywords": ["4c", "shrinkage"],
+    "hairType": "coily",
+    "response": "Use rich butters and oils like shea butter and coconut oil. Stretch styles like twists, braids, or banding can reduce shrinkage. Keep hair moisturized with the LOC method."
+  },
+  {
+    "keywords": ["routine", "daily care"],
+    "response": "Establish a routine: Cleanse 2x/week, condition every wash, and seal with oil. Avoid daily manipulation. Sleep with a silk or satin pillowcase to reduce friction."
+  },
+  {
+    "keywords": ["product recommendation", "shampoo"],
+    "response": "Try sulfate-free shampoos like Shea Moisture, Mielle Organics, or Carol's Daughter. Look for ingredients like argan oil, coconut oil, or shea butter based on your hair type."
+  },
+  {
+    "keywords": ["heat damage", "straightening"],
+    "response": "Always use a heat protectant before styling. Keep temperatures below 350°F and limit heat styling to 2-3 times per week. Deep condition regularly to repair damage."
+  },
+  {
+    "keywords": ["color treated", "dyed hair"],
+    "response": "Use color-safe shampoos and conditioners. Deep condition weekly and avoid hot water when washing. UV protection sprays can prevent color fading."
+  }
+]
