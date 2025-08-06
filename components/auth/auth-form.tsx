@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabase'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -10,12 +10,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Loader2 } from 'lucide-react'
+import type { Database } from '@/lib/supabase'
 
 export function AuthForm() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [message, setMessage] = useState<string | null>(null)
   const router = useRouter()
+  const supabase = createClientComponentClient<Database>()
 
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -47,11 +49,21 @@ export function AuthForm() {
         // With email confirmation disabled, user should be logged in immediately
         if (data.session) {
           setMessage('Account created successfully! Redirecting...')
-          setTimeout(() => {
-            router.push('/chat')
-          }, 1500)
+          // Force a page refresh to ensure middleware picks up the new session
+          window.location.href = '/chat'
         } else {
-          setMessage('Account created! Please sign in.')
+          // If no session but user exists, try to sign them in automatically
+          const { data: signInData, error: signInError } = await supabase.auth.signInWithPassword({
+            email,
+            password,
+          })
+          
+          if (signInError) {
+            setMessage('Account created! Please sign in with your credentials.')
+          } else if (signInData.session) {
+            setMessage('Account created and signed in! Redirecting...')
+            window.location.href = '/chat'
+          }
         }
       }
     } catch (err) {
@@ -66,6 +78,7 @@ export function AuthForm() {
     e.preventDefault()
     setLoading(true)
     setError(null)
+    setMessage(null)
 
     const formData = new FormData(e.currentTarget)
     const email = formData.get('email') as string
@@ -80,7 +93,11 @@ export function AuthForm() {
       if (error) {
         setError(error.message)
       } else if (data.session) {
-        router.push('/chat')
+        setMessage('Signed in successfully! Redirecting...')
+        
+        // Force a complete page reload to ensure session is properly established
+        // This bypasses any client-side routing issues
+        window.location.replace('/chat')
       }
     } catch (err) {
       setError('An unexpected error occurred. Please try again.')
@@ -92,12 +109,12 @@ export function AuthForm() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-pink-50 p-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold text-purple-800">HairCare AI</CardTitle>
-          <CardDescription>Your personal hair care assistant</CardDescription>
+      <Card className="w-full max-w-md mx-4">
+        <CardHeader className="text-center px-4 sm:px-6 py-6">
+          <CardTitle className="text-xl sm:text-2xl font-bold text-purple-800">HairCare AI</CardTitle>
+          <CardDescription className="text-sm sm:text-base">Your personal hair care assistant</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="px-4 sm:px-6 pb-6">
           <Tabs defaultValue="signin" className="w-full">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="signin">Sign In</TabsTrigger>

@@ -1,46 +1,185 @@
 [
   {
-    "keywords": ["dandruff", "dry scalp"],
+    "keywords": ["what is hair care", "hair care definition", "define hair care"],
+    "response": "Hair care refers to the practices and products used to maintain healthy hair and scalp. It includes cleansing, conditioning, styling, and protecting hair from damage. Good hair care involves understanding your hair type, using appropriate products, and following routines that promote hair health, growth, and appearance."
+  },
+  {
+    "keywords": ["hair care routine", "daily routine", "hair routine"],
+    "response": "A basic hair care routine includes: 1) Cleansing 2-3 times per week with sulfate-free shampoo, 2) Conditioning every wash, 3) Deep conditioning weekly, 4) Using leave-in products for protection, 5) Gentle detangling when wet, 6) Protecting hair while sleeping with silk/satin pillowcases or bonnets."
+  },
+  {
+    "keywords": ["dandruff", "dry scalp", "flaky scalp"],
     "scalp": "dry",
-    "response": "Use a moisturizing anti-dandruff shampoo containing zinc pyrithione or tea tree oil. Avoid harsh cleansers and consider using a scalp oil treatment 2-3 times per week."
+    "response": "For dandruff and dry scalp, use a moisturizing anti-dandruff shampoo containing zinc pyrithione, ketoconazole, or tea tree oil. Avoid harsh cleansers and consider using a scalp oil treatment 2-3 times per week. Massage your scalp gently to improve circulation. If symptoms persist, consult a dermatologist."
   },
   {
-    "keywords": ["hair loss", "shedding"],
-    "response": "Consider protein treatments and reduce tight hairstyles. Consult a dermatologist if shedding persists. Biotin supplements and scalp massage can also help stimulate growth."
+    "keywords": ["hair loss", "shedding", "thinning hair", "balding"],
+    "response": "Hair loss can be caused by genetics, stress, hormonal changes, or nutritional deficiencies. Consider protein treatments, reduce tight hairstyles, and massage your scalp regularly. Biotin supplements, rosemary oil, and minoxidil may help. Consult a dermatologist for persistent hair loss as it may require medical treatment."
   },
   {
-    "keywords": ["frizz", "curly"],
+    "keywords": ["frizz", "frizzy hair", "humidity"],
     "hairType": "curly",
-    "response": "Frizz control starts with hydration. Use a leave-in conditioner, avoid heat, and dry hair with a microfiber towel. Try the 'plopping' method for better curl definition."
+    "response": "To control frizz: 1) Use sulfate-free shampoo, 2) Apply leave-in conditioner to damp hair, 3) Use anti-frizz serums or oils, 4) Avoid heat styling, 5) Sleep on silk pillowcases, 6) Try the 'plopping' method for curly hair, 7) Use a diffuser when blow-drying."
   },
   {
-    "keywords": ["oily scalp", "greasy hair"],
+    "keywords": ["oily scalp", "greasy hair", "oily roots"],
     "scalp": "oily",
-    "response": "Wash hair more frequently with a clarifying shampoo. Avoid heavy oils and silicone-based products. Dry shampoo between washes can help absorb excess oil."
+    "response": "For oily scalp: Wash hair more frequently (every other day) with a clarifying shampoo. Avoid heavy oils and silicone-based products near the roots. Use dry shampoo between washes. Focus conditioner on mid-lengths and ends only. Consider using apple cider vinegar rinses weekly to balance scalp pH."
   },
   {
-    "keywords": ["split ends"],
-    "response": "Split ends cannot be repaired—trim them regularly every 6-8 weeks. Use heat protection and deep condition weekly. Avoid brushing wet hair aggressively."
+    "keywords": ["split ends", "damaged ends", "hair breakage"],
+    "response": "Split ends cannot be repaired—trim them regularly every 6-8 weeks. Prevent future damage by: using heat protectant, avoiding excessive brushing when wet, using wide-tooth combs, deep conditioning weekly, and protecting hair from sun and chlorine. Regular protein treatments can strengthen hair."
   },
   {
-    "keywords": ["4c", "shrinkage"],
+    "keywords": ["4c hair", "coily hair", "kinky hair", "shrinkage"],
     "hairType": "coily",
-    "response": "Use rich butters and oils like shea butter and coconut oil. Stretch styles like twists, braids, or banding can reduce shrinkage. Keep hair moisturized with the LOC method."
+    "response": "For 4C hair: Use rich butters and oils like shea butter, coconut oil, and jojoba oil. Keep hair moisturized with the LOC (Liquid, Oil, Cream) method. Protective styles like twists, braids, or banding can reduce shrinkage. Avoid sulfates and use gentle, moisturizing shampoos. Deep condition weekly."
   },
   {
-    "keywords": ["routine", "daily care"],
-    "response": "Establish a routine: Cleanse 2x/week, condition every wash, and seal with oil. Avoid daily manipulation. Sleep with a silk or satin pillowcase to reduce friction."
+    "keywords": ["curly hair", "curl definition", "curl pattern"],
+    "hairType": "curly",
+    "response": "For curly hair care: Follow the Curly Girl Method - no sulfates, silicones, or heat. Use co-washing, apply products to soaking wet hair, scrunch out excess water with a microfiber towel, and air dry or use a diffuser. Regular deep conditioning and protein treatments maintain curl health."
   },
   {
-    "keywords": ["product recommendation", "shampoo"],
-    "response": "Try sulfate-free shampoos like Shea Moisture, Mielle Organics, or Carol's Daughter. Look for ingredients like argan oil, coconut oil, or shea butter based on your hair type."
+    "keywords": ["straight hair", "fine hair", "limp hair"],
+    "hairType": "straight",
+    "response": "For straight hair: Use lightweight, volumizing products. Avoid heavy oils and creams that can weigh hair down. Dry shampoo adds texture and volume. Use a clarifying shampoo weekly to remove buildup. Consider root-lifting techniques and avoid over-conditioning."
   },
   {
-    "keywords": ["heat damage", "straightening"],
-    "response": "Always use a heat protectant before styling. Keep temperatures below 350°F and limit heat styling to 2-3 times per week. Deep condition regularly to repair damage."
+    "keywords": ["wavy hair", "beach waves", "2a 2b 2c"],
+    "hairType": "wavy",
+    "response": "For wavy hair: Use lightweight leave-in conditioners and curl creams. Scrunch hair while damp to enhance waves. Avoid brushing when dry to prevent frizz. Use a diffuser or air dry. Refresh waves with water and leave-in conditioner between washes."
   },
   {
-    "keywords": ["color treated", "dyed hair"],
-    "response": "Use color-safe shampoos and conditioners. Deep condition weekly and avoid hot water when washing. UV protection sprays can prevent color fading."
+    "keywords": ["heat damage", "straightening", "blow drying", "flat iron"],
+    "response": "To prevent heat damage: Always use heat protectant products, keep temperatures below 350°F (175°C), limit heat styling to 2-3 times per week, use ceramic or tourmaline tools, and deep condition regularly. For damaged hair, focus on protein treatments and moisture balance."
+  },
+  {
+    "keywords": ["color treated", "dyed hair", "bleached hair", "highlights"],
+    "response": "For color-treated hair: Use color-safe, sulfate-free shampoos and conditioners. Deep condition weekly with protein-moisture balanced treatments. Avoid hot water when washing. Use UV protection sprays to prevent color fading. Wait 48-72 hours after coloring before washing."
+  },
+  {
+    "keywords": ["hair growth", "grow hair faster", "length retention"],
+    "response": "To promote hair growth: Maintain a healthy diet rich in protein, vitamins, and minerals. Massage your scalp regularly to improve circulation. Trim split ends regularly. Protect hair from damage with gentle handling, silk pillowcases, and minimal heat styling. Consider biotin supplements and scalp treatments."
+  },
+  {
+    "keywords": ["dry hair", "moisturizing", "hydration"],
+    "response": "For dry hair: Use moisturizing shampoos and deep conditioning treatments weekly. Apply leave-in conditioners and hair oils like argan, jojoba, or coconut oil. Avoid over-washing and use lukewarm water. Sleep on silk pillowcases and use a humidifier in dry environments."
+  },
+  {
+    "keywords": ["protein treatment", "protein overload", "elasticity"],
+    "response": "Protein treatments strengthen damaged hair by filling in gaps in the hair cuticle. Use weekly for damaged hair, monthly for healthy hair. Signs you need protein: hair feels mushy when wet, lacks elasticity, or breaks easily. Alternate with moisturizing treatments to maintain balance."
+  },
+  {
+    "keywords": ["deep conditioning", "hair mask", "intensive treatment"],
+    "response": "Deep conditioning should be done weekly for damaged hair, bi-weekly for healthy hair. Apply to clean, damp hair from mid-length to ends. Leave on for 15-30 minutes with heat for better penetration. Rinse thoroughly. Alternate between protein and moisturizing treatments based on hair needs."
+  },
+  {
+    "keywords": ["loc method", "lco method", "layering products"],
+    "response": "The LOC method (Liquid, Oil, Cream) helps seal moisture in curly and coily hair: 1) Apply a water-based leave-in conditioner, 2) Seal with a light oil like jojoba or argan, 3) Finish with a cream or butter. Some prefer LCO (Liquid, Cream, Oil) for finer hair textures."
+  },
+  {
+    "keywords": ["detangling", "knots", "tangles"],
+    "response": "Detangle gently when hair is wet and conditioned. Use a wide-tooth comb or detangling brush, starting from ends and working up. Apply a detangling spray or leave-in conditioner for slip. For severe tangles, use your fingers first, then a comb. Never force through knots."
+  },
+  {
+    "keywords": ["scalp care", "scalp health", "itchy scalp"],
+    "response": "Healthy scalp care includes: regular cleansing without over-washing, gentle massage to improve circulation, using scalp-specific treatments for issues like dryness or oiliness, avoiding harsh chemicals, and maintaining a balanced diet. An itchy scalp may indicate dryness, product buildup, or sensitivity."
+  },
+  {
+    "keywords": ["hair porosity", "low porosity", "high porosity"],
+    "response": "Hair porosity refers to your hair's ability to absorb moisture. Low porosity hair repels water and needs heat to open cuticles for treatments. High porosity hair absorbs water quickly but loses it fast - needs protein treatments and heavier products to seal moisture."
+  },
+  {
+    "keywords": ["sulfate free", "sulfates", "harsh shampoo"],
+    "response": "Sulfate-free shampoos are gentler and don't strip natural oils as harshly as traditional sulfates. They're especially beneficial for dry, damaged, color-treated, or curly hair. Look for alternatives like sodium cocoyl isethionate or decyl glucoside. You may need a clarifying shampoo occasionally to remove buildup."
+  },
+  {
+    "keywords": ["co washing", "conditioner only", "no poo"],
+    "response": "Co-washing (conditioner-only washing) cleanses hair gently without stripping oils. Use a cleansing conditioner or regular conditioner with mild cleansing agents. Massage scalp thoroughly and rinse well. Best for dry, curly, or damaged hair. You may still need occasional shampooing to remove buildup."
+  },
+  {
+    "keywords": ["hair oils", "argan oil", "coconut oil", "jojoba oil"],
+    "response": "Different oils serve different purposes: Coconut oil penetrates hair shaft (good for protein), Argan oil adds shine and reduces frizz, Jojoba oil mimics natural sebum, Castor oil may promote growth. Apply to damp hair for better absorption, focusing on mid-lengths and ends."
+  },
+  {
+    "keywords": ["protective styles", "braids", "twists", "buns"],
+    "response": "Protective styles tuck away hair ends and reduce manipulation. Good options include braids, twists, buns, and updos. Don't make them too tight to avoid tension and breakage. Moisturize hair before styling and maintain the style with light oils or leave-in conditioners."
+  },
+  {
+    "keywords": ["hair vitamins", "biotin", "supplements"],
+    "response": "Hair vitamins can support growth if you have deficiencies. Key nutrients include biotin, iron, vitamin D, zinc, and protein. A balanced diet is usually sufficient, but supplements may help if you have specific deficiencies. Consult a healthcare provider before starting supplements."
+  },
+  {
+    "keywords": ["trimming", "cutting hair", "split ends"],
+    "response": "Regular trims every 6-8 weeks help maintain healthy hair by removing split ends before they travel up the hair shaft. Trimming doesn't make hair grow faster, but it prevents breakage and maintains length. Use sharp scissors and cut when hair is dry for accuracy."
+  },
+  {
+    "keywords": ["hair texture", "fine hair", "thick hair", "coarse hair"],
+    "response": "Hair texture refers to the thickness of individual strands. Fine hair needs lightweight products and volumizing techniques. Thick/coarse hair can handle heavier products and needs more moisture. Medium texture is most versatile. Choose products based on your specific texture needs."
+  },
+  {
+    "keywords": ["humidity", "weather", "seasonal hair care"],
+    "response": "Humidity can cause frizz and affect curl patterns. Use anti-humidity products with silicones or polymers that create a barrier. In dry weather, increase moisture with leave-in conditioners and oils. Adjust your routine seasonally - more moisture in winter, lighter products in summer."
+  },
+  {
+    "keywords": ["hair brushing", "brushes", "combs"],
+    "response": "Use the right tools: wide-tooth combs for wet hair, boar bristle brushes for distributing oils, paddle brushes for straight hair, and detangling brushes for curly hair. Brush gently, starting from ends. Avoid brushing curly hair when dry to prevent frizz and breakage."
+  },
+  {
+    "keywords": ["sleeping", "night routine", "silk pillowcase"],
+    "response": "Protect hair while sleeping: use silk or satin pillowcases/bonnets to reduce friction, try loose braids or a silk scrunchie for long hair, apply a light leave-in treatment, and consider the 'medusa clipping' method for curly hair. Avoid tight elastics that can cause breakage."
+  },
+  {
+    "keywords": ["chlorine", "swimming", "pool water"],
+    "response": "Protect hair from chlorine: wet hair with clean water before swimming, apply a leave-in conditioner or oil as a barrier, wear a swim cap when possible, and rinse immediately after swimming. Use a clarifying shampoo weekly if you swim regularly to remove chlorine buildup."
+  },
+  {
+    "keywords": ["hair elasticity", "stretch test", "healthy hair"],
+    "response": "Hair elasticity indicates hair health. Healthy hair should stretch 30-50% when wet and return to normal length. Poor elasticity (hair breaks immediately or doesn't return) indicates damage. Improve with protein treatments for strength and moisturizing treatments for flexibility."
+  },
+  {
+    "keywords": ["natural hair", "transitioning", "big chop"],
+    "response": "Transitioning to natural hair requires patience and proper care. Keep hair moisturized, use protective styles, trim regularly to remove relaxed ends, and be gentle during the vulnerable transition period. The 'big chop' removes all chemically processed hair at once for a fresh start."
+  },
+  {
+    "keywords": ["hair density", "thin hair", "thick hair"],
+    "response": "Hair density refers to how many strands you have per square inch. Low density hair benefits from volumizing products and techniques, while high density hair may need more product and longer styling time. Don't confuse density with texture - you can have fine but dense hair or thick but sparse hair."
+  },
+  {
+    "keywords": ["scalp massage", "circulation", "hair growth"],
+    "response": "Scalp massage improves blood circulation, which may promote hair growth. Use fingertips (not nails) to massage in circular motions for 5-10 minutes daily. You can use oils like rosemary or peppermint for added benefits. Be gentle to avoid irritation or damage to hair follicles."
+  },
+  {
+    "keywords": ["hair pH", "acid mantle", "alkaline"],
+    "response": "Hair's natural pH is slightly acidic (4.5-5.5), which keeps the cuticle smooth and hair healthy. Alkaline products (high pH) can lift the cuticle causing frizz and damage. Use pH-balanced products and consider apple cider vinegar rinses to restore natural pH balance."
+  },
+  {
+    "keywords": ["hair cuticle", "hair structure", "cortex"],
+    "response": "Hair has three layers: the cuticle (outer protective layer), cortex (middle layer containing color and strength), and medulla (inner core). Healthy cuticles lie flat, creating shine and protecting inner layers. Damage lifts cuticles, causing dullness, tangles, and breakage."
+  },
+  {
+    "keywords": ["hair cycle", "growth phases", "anagen"],
+    "response": "Hair grows in three phases: Anagen (growth phase, 2-7 years), Catagen (transition phase, 2-3 weeks), and Telogen (resting phase, 2-3 months). About 85-90% of hair is in the growth phase at any time. Understanding this cycle helps explain normal shedding and growth patterns."
+  },
+  {
+    "keywords": ["product buildup", "clarifying", "residue"],
+    "response": "Product buildup occurs when styling products, oils, and minerals accumulate on hair, making it feel heavy, dull, or greasy. Use a clarifying shampoo weekly or bi-weekly to remove buildup. Signs include products not working as well, hair feeling coated, or lack of volume."
+  },
+  {
+    "keywords": ["hair allergies", "sensitive scalp", "reactions"],
+    "response": "Hair product allergies can cause scalp irritation, itching, or rashes. Common allergens include fragrances, preservatives, and certain chemicals. Patch test new products, choose fragrance-free options for sensitive scalps, and discontinue use if irritation occurs. Consult a dermatologist for persistent issues."
+  },
+  {
+    "keywords": ["diy hair masks", "homemade treatments", "kitchen ingredients"],
+    "response": "DIY hair masks can be effective: avocado and honey for moisture, egg and olive oil for protein, banana and coconut oil for softness. Always patch test first, use fresh ingredients, and don't leave protein treatments on too long. Commercial products are often more consistent and balanced."
+  },
+  {
+    "keywords": ["hair tools", "styling tools", "heat tools"],
+    "response": "Invest in quality hair tools: ceramic or tourmaline for even heat distribution, ionic technology to reduce frizz, adjustable temperature settings, and automatic shut-off for safety. Clean tools regularly, replace when damaged, and always use heat protectant products."
+  },
+  {
+    "keywords": ["hair myths", "misconceptions", "facts"],
+    "response": "Common hair myths debunked: Cutting hair doesn't make it grow faster (growth happens at the scalp), you can't repair split ends (only prevent them), brushing 100 strokes daily can cause damage, and hair doesn't get 'used to' products. Base hair care on science, not myths."
   }
 ]

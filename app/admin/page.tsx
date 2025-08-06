@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabase'
+import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
+import type { Database } from '@/lib/supabase'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { ArrowLeft, Users, MessageSquare, TrendingUp, Shield } from 'lucide-react'
+import { ArrowLeft, Users, MessageSquare, TrendingUp, Shield, Loader2 } from 'lucide-react'
 
 interface AdminStats {
   totalUsers: number
@@ -42,6 +43,7 @@ export default function AdminPage() {
   const [loading, setLoading] = useState(true)
   const [isAdmin, setIsAdmin] = useState(false)
   const router = useRouter()
+  const supabase = createClientComponentClient<Database>()
 
   useEffect(() => {
     checkAdminAccess()
@@ -71,11 +73,11 @@ export default function AdminPage() {
 
   const fetchAdminData = async () => {
     try {
-      // Fetch stats
+      // Fetch stats with proper counting
       const [usersResult, conversationsResult, messagesResult] = await Promise.all([
-        supabase.from('profiles').select('id', { count: 'exact' }),
-        supabase.from('conversations').select('id', { count: 'exact' }),
-        supabase.from('messages').select('id', { count: 'exact' })
+        supabase.from('profiles').select('*', { count: 'exact', head: true }),
+        supabase.from('conversations').select('*', { count: 'exact', head: true }),
+        supabase.from('messages').select('*', { count: 'exact', head: true })
       ])
 
       setStats({
@@ -126,16 +128,28 @@ export default function AdminPage() {
 
   if (!isAdmin) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div>Checking permissions...</div>
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-900 border-t-transparent"></div>
+          <div className="text-center">
+            <h2 className="text-lg font-semibold text-gray-900 mb-2">Checking Permissions</h2>
+            <p className="text-gray-600">Verifying admin access...</p>
+          </div>
+        </div>
       </div>
     )
   }
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div>Loading admin dashboard...</div>
+      <div className="min-h-screen flex items-center justify-center bg-white">
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-900 border-t-transparent"></div>
+          <div className="text-center">
+            <h2 className="text-lg font-semibold text-gray-900 mb-2">Loading Dashboard</h2>
+            <p className="text-gray-600">Fetching admin data...</p>
+          </div>
+        </div>
       </div>
     )
   }
@@ -152,7 +166,7 @@ export default function AdminPage() {
             <ArrowLeft className="h-4 w-4" />
           </Button>
           <div className="flex items-center gap-2">
-            <Shield className="h-6 w-6 text-purple-600" />
+            <Shield className="h-6 w-6 text-blue-900" />
             <h1 className="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
           </div>
         </div>
@@ -223,7 +237,8 @@ export default function AdminPage() {
                         <div className="space-y-1">
                           <div className="flex items-center gap-2">
                             <p className="font-medium">{user.full_name || 'No name'}</p>
-                            <Badge variant={user.role === 'admin' ? 'default' : 'secondary'}>
+                            <Badge variant={user.role === 'admin' ? 'default' : 'secondary'} 
+                                   className={user.role === 'admin' ? 'bg-blue-900' : ''}>
                               {user.role}
                             </Badge>
                           </div>
