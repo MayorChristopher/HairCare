@@ -202,13 +202,6 @@ export function AuthForm() {
               <AlertDescription className="text-green-800">{message}</AlertDescription>
             </Alert>
           )}
-
-          {/* Demo credentials for testing */}
-          <div className="mt-6 p-3 bg-blue-50 rounded-lg border border-blue-200">
-            <p className="text-xs text-blue-800 font-medium mb-1">Demo Credentials:</p>
-            <p className="text-xs text-blue-700">Email: demo@haircare.ai</p>
-            <p className="text-xs text-blue-700">Password: demo123</p>
-          </div>
         </CardContent>
       </Card>
     </div>
