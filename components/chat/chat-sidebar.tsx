@@ -166,7 +166,7 @@ export function ChatSidebar({
               <Scissors className="h-5 w-5 text-white" />
             </div>
             <div className="min-w-0 flex-1">
-              <h1 className="font-bold text-lg text-white truncate">HairCare AI</h1>
+              <h1 className="font-bold text-lg text-white truncate">HairCare Recommender</h1>
               <p className="text-xs text-blue-200 truncate">Your personal assistant</p>
             </div>
           </div>

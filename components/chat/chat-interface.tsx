@@ -223,7 +223,7 @@ export function ChatInterface({
               <Scissors className="h-5 w-5 text-blue-900" />
             </div>
             <div>
-              <h1 className="font-semibold text-gray-900">HairCare AI</h1>
+              <h1 className="font-semibold text-gray-900">HairCare Recommender</h1>
               <p className="text-sm text-gray-500">Your hair care assistant</p>
             </div>
           </div>
@@ -240,7 +240,7 @@ export function ChatInterface({
                   <Scissors className="h-10 w-10 text-blue-900" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                  Welcome to HairCare AI!
+                  Welcome to HairCare Recommender!
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   I'm your personal hair care assistant with extensive knowledge about hair types, treatments, products, and styling. 

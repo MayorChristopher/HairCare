@@ -57,7 +57,7 @@ export default function ChatPage() {
         <div className="flex flex-col items-center gap-4">
           <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-900 border-t-transparent"></div>
           <div className="text-center">
-            <h2 className="text-lg font-semibold text-gray-900 mb-2">Loading HairCare AI</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-2">Loading HairCare Recommender</h2>
             <p className="text-gray-600">Preparing your personalized hair care assistant...</p>
           </div>
         </div>

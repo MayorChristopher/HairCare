@@ -111,7 +111,7 @@ export function AuthForm() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-pink-50 p-4">
       <Card className="w-full max-w-md mx-4">
         <CardHeader className="text-center px-4 sm:px-6 py-6">
-          <CardTitle className="text-xl sm:text-2xl font-bold text-purple-800">HairCare AI</CardTitle>
+          <CardTitle className="text-xl sm:text-2xl font-bold text-purple-800">HairCare Recommender</CardTitle>
           <CardDescription className="text-sm sm:text-base">Your personal hair care assistant</CardDescription>
         </CardHeader>
         <CardContent className="px-4 sm:px-6 pb-6">

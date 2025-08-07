@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'HairCare AI Assistant',
+  title: 'HairCare Recommender Assistant',
   description: 'Your personal AI-powered hair care recommendation system',
     generator: 'v0.dev'
 }
